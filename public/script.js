@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         mainContentSection.style.display = 'none'; // Hide content
         // Display the message
-        yesMessage.style.display = 'block';
+        var yesMessage = document.getElementById('yesMessage'); // Ensure this ID matches your HTML
+        yesMessage.style.display = 'block'; // Make it visible
+
         document.body.style.backgroundImage = "url('public/happy.jpg')";
         if (happyMusic.paused) {
             happyMusic.play().catch(error => console.error('Error playing the audio:', error));
