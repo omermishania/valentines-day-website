@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!generalMusic.paused) {
             generalMusic.pause();
         }
-        document.body.style.backgroundImage = "url('public/crying.avif')";
+        document.body.style.backgroundImage = "url('public/Crying.jpg')";
         if (sadMusic.paused) {
             sadMusic.play().catch(error => console.error('Error playing the audio:', error));
         }
