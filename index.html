@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Shahar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Landing Section -->
+    <div id="landingSection" class="section">
+        <h1>Welcome, Shahar Shurki</h1>
+        <h1>Please, turn up the volume, and press the button below</h1>
+        <p id="mobileMessage">If you opened this on mobile, please open on your laptop browser.</p>
+        <button id="continueButton">Continue</button>
+    </div>
+    <!-- Main Content Section -->
+    <div id="mainContentSection" class="section" style="display: none;">
+        <div class="container">
+            <h1 id="questionText">Will you be my valentine?</h1>
+            <div class="button-section"> <!-- Use button-section for spacing and alignment -->
+                <button id="yesBtn">Yes</button>
+                <button id="noBtn">No</button>
+            </div>
+            <button id="changeMindBtn" style="display: none;">Okay, I changed my mind</button>
+            <div id="yesMessage" style="display: none;">See you on wednesday then 😘!</div>
+
+        </div>
+
+        <!-- Audio Elements -->
+        <audio id="generalMusic">
+            <source src="public/lovefool.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="happyMusic">
+            <source src="public/happy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="sadMusic">
+            <source src="public/lonely.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="public/script.js"></script>
+</body>
+</html>
